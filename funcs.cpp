@@ -15,12 +15,12 @@ using std::cout;
 using std::endl;
 
 
-string removeLeadingSpaces(string line) {
+string removeLeadingSpaces(string line) {		//Removes white space in the beginning
 	
-	string ans = "";
+	string ans = "";				//Rename variable to something more specific
 	
-	for (int i = 0; i < line.size(); i++ ) {
-		if (!isspace(line[i])) {
+	for (int i = 0; i < line.size(); i++ ) {	//Nice for loop
+		if (!isspace(line[i])) {		//If the value at the index is not a space then add it to the new string
 			ans += line.substr(i);
 			return ans;
 		}
@@ -28,13 +28,13 @@ string removeLeadingSpaces(string line) {
 	
 }
 
-int countChar(string line, char c) {
+int countChar(string line, char c) {			//Counts the occurences of char c
 	
-	int ans = 0;
+	int ans = 0;					//Rename variable to something more specific like counter
 	
-	for (int i = 0; i < line.size(); i++ ) {
-		char curr = (char) line[i];
-		if (curr == c) {
+	for (int i = 0; i < line.size(); i++ ) {	
+		char curr = (char) line[i];		//Use of type conversion
+		if (curr == c) {			//If the value at the index of the string is the same as char c, then add one to the count
 			ans += 1;
 		}
 	}
