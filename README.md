@@ -1,5 +1,5 @@
 # part2
-
+Commented by Leman Yan
 -The program compiles and works as specified. 
 -However does not check if the other programs work individually
 -Nice structure and indentation
